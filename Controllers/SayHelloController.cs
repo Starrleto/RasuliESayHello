@@ -5,7 +5,7 @@ namespace RasuliESayHello.Controller;
 [Route("[controller]")]
 public class SayHelloController : ControllerBase{
 
-    [HttpPost]
+    [HttpGet]
     [Route("sayHello/{name}")]
     public string sayHello(string name){
         return "Hello, "+name;
